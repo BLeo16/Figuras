@@ -1,71 +1,71 @@
-Circunferencia c1,c2;
-      c1 = new Circunferencia(4);
-      c2 = new Circunferencia(3,1,2);
-      c1.Mover(1, 2);
-      c2.Mover(2, 3);
-      System.out.println("C1\n"+c1.Imprimir());
-      System.out.println("C2\n"+c2.Imprimir());
-      System.out.println("Area C1: "+c1.CalcularArea()+"\tArea C2: "+c2.CalcularArea());
-      System.out.println("Perimetro C1: "+c1.CalcularPerimetro()
-        +"\tPerimetro C2: "+c2.CalcularPerimetro());
-      
-        Recta r1,r2;
-        r1= new Recta(2,3);
-        r2 = new Recta(1,0,5,4);
-        r1.Mover(2, 1);
-        r2.Mover(1, 3);
-        System.out.println("R1\n"+r1.Imprimir());
-        System.out.println("R2\n"+r2.Imprimir());
-        System.out.println("Longitud R1:"+ r1.CalcularLongitud()+
-                           "\tLongitud R2:"+ r2.CalcularLongitud());
+Circunferencia c1, c2;
+            c1 = new Circunferencia(4);
+            c2 = new Circunferencia(3, 1, 2);
+            //c1.Mover(1, 2);
+            c2.Mover(2, 3);
+            Console.WriteLine("C1\n" + c1.Imprimir());
+            Console.WriteLine("C2\n" + c2.Imprimir());
+            Console.WriteLine("Area C1: " + c1.CalcularArea() + "\tArea C2: " + c2.CalcularArea());
+            Console.WriteLine("Perimetro C1: " + c1.CalcularPerimetro()
+              + "\tPerimetro C2: " + c2.CalcularPerimetro());
 
-          Triangulo t1,t2;
-          t1 = new Triangulo(1,1,3,4);
-          t2 = new Triangulo(5,2,3,3);
-          t1.Mover(1, 2);
-          t2.Mover(3, 2);
-          System.out.println("T1\n"+t1.Imprimir());
-          System.out.println("T2\n"+t2.Imprimir());
-          System.out.println("Area T1: "+ t1.CalcularArea()+"\tArea T2: " 
-                             + t2.CalcularArea());
-          System.out.println("Perímetro T1: "+t1.CalcularPerimetro()+"\tPerímetro T2: "
-                             + t2.CalcularPerimetro());
-              
-            Elipse e1,e2;
-            e1 = new Elipse(3,2);
-            e2 = new Elipse(4,3,2,1);
-            e1.Mover(2, 1);
-            e2.Mover(3, 2);
-            System.out.println("E1\n"+e1.Imprimir());
-            System.out.println("E2\n"+e2.Imprimir());
-            System.out.println("Area E1: "+e1.CalcularArea()
-                              +"\tArea E2:"+e2.CalcularArea());
-            System.out.println("Perímetro E1: "+e1.CalcularPerimetro()
-                    +"\tPerímetro E2: "+e2.CalcularPerimetro());
-            
-            Cuadrado cd1,cd2;
-            cd1 = new Cuadrado(4);
-            cd2 = new Cuadrado(5,1,2);         
-            cd1.Mover(3, 2);
-            cd2.Mover(2, -2);
-            System.out.println("Cd1\n"+cd1.Imprimir());
-            System.out.println("Cd2\n"+cd2.Imprimir());
-            System.out.println("Area Cd1:"+cd1.CalcularArea()+"\tArea Cd2:"
-                                  +cd2.CalcularArea());
-            System.out.println("Perímetro Cd1:"+cd1.CalcularPerimetro()
-                              +"\tPerímetro Cd2:"+cd2.CalcularPerimetro());
-            
-            Rectangulo R1,R2;
-            R1 = new Rectangulo(6,4);
-            R2 = new Rectangulo(5,2,-1,-3);
-            R1.Mover(1, -2);
-            R2.Mover(-2, 2);
-            System.out.println("R1\n"+R1.Imprimir());
-            System.out.println("R2\n"+R2.Imprimir());
-            System.out.println("Area R1:"+R1.CalcularArea()+"\tArea R2:"
-                               +R2.CalcularArea());
-            System.out.println("Perímetro R1:"+R1.CalcularPerimetro()
-                              +"\tPerímetro R2:"+R2.CalcularPerimetro());
+            //Recta r1, r2;
+            //r1 = new Recta(2, 3);
+            //r2 = new Recta(1, 0, 5, 4);
+            //r1.Mover(2, 1);
+            //r2.Mover(1, 3);
+            //Console.WriteLine("R1\n" + r1.Imprimir());
+            //Console.WriteLine("R2\n" + r2.Imprimir());
+            //Console.WriteLine("Longitud R1:" + r1.CalcularLongitud() +
+            //                   "\tLongitud R2:" + r2.CalcularLongitud());
+
+            //Triangulo t1, t2;
+            //t1 = new Triangulo(1, 1, 3, 4);
+            //t2 = new Triangulo(5, 2, 3, 3);
+            //t1.Mover(1, 2);
+            //t2.Mover(3, 2);
+            //Console.WriteLine("T1\n" + t1.Imprimir());
+            //Console.WriteLine("T2\n" + t2.Imprimir());
+            //Console.WriteLine("Area T1: " + t1.CalcularArea() + "\tArea T2: "
+            //                   + t2.CalcularArea());
+            //Console.WriteLine("Perímetro T1: " + t1.CalcularPerimetro() + "\tPerímetro T2: "
+            //                   + t2.CalcularPerimetro());
+
+            //Elipse e1, e2;
+            //e1 = new Elipse(3, 2);
+            //e2 = new Elipse(4, 3, 2, 1);
+            //e1.Mover(2, 1);
+            //e2.Mover(3, 2);
+            //Console.WriteLine("E1\n" + e1.Imprimir());
+            //Console.WriteLine("E2\n" + e2.Imprimir());
+            //Console.WriteLine("Area E1: " + e1.CalcularArea()
+            //                  + "\tArea E2:" + e2.CalcularArea());
+            //Console.WriteLine("Perímetro E1: " + e1.CalcularPerimetro()
+            //        + "\tPerímetro E2: " + e2.CalcularPerimetro());
+
+            //Cuadrado cd1, cd2;
+            //cd1 = new Cuadrado(4);
+            //cd2 = new Cuadrado(5, 1, 2);
+            //cd1.Mover(3, 2);
+            //cd2.Mover(2, -2);
+            //Console.WriteLine("Cd1\n" + cd1.Imprimir());
+            //Console.WriteLine("Cd2\n" + cd2.Imprimir());
+            //Console.WriteLine("Area Cd1:" + cd1.CalcularArea() + "\tArea Cd2:"
+            //                      + cd2.CalcularArea());
+            //Console.WriteLine("Perímetro Cd1:" + cd1.CalcularPerimetro()
+            //                  + "\tPerímetro Cd2:" + cd2.CalcularPerimetro());
+
+            //Rectangulo R1, R2;
+            //R1 = new Rectangulo(6, 4);
+            //R2 = new Rectangulo(5, 2, -1, -3);
+            //R1.Mover(1, -2);
+            //R2.Mover(-2, 2);
+            //Console.WriteLine("R1\n" + R1.Imprimir());
+            //Console.WriteLine("R2\n" + R2.Imprimir());
+            //Console.WriteLine("Area R1:" + R1.CalcularArea() + "\tArea R2:"
+            //                   + R2.CalcularArea());
+            //Console.WriteLine("Perímetro R1:" + R1.CalcularPerimetro()
+            //                  + "\tPerímetro R2:" + R2.CalcularPerimetro());
             //ClaseCircunferencia
              public int x;
     public int y;
