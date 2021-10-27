@@ -66,3 +66,194 @@ Circunferencia c1,c2;
                                +R2.CalcularArea());
             System.out.println("Perímetro R1:"+R1.CalcularPerimetro()
                               +"\tPerímetro R2:"+R2.CalcularPerimetro());
+            //ClaseCircunferencia
+             public int x;
+    public int y;
+    public double radio;
+    
+    public Circunferencia(double r1){
+        radio = r1;
+        x =0;
+        y=0;
+    }
+    public Circunferencia(double r1, int Cx, int Cy){
+        radio = r1;
+        x = Cx;
+        y = Cy;
+    }
+    public double CalcularArea(){
+        return Math.PI*radio*radio;
+    }
+    public double CalcularPerimetro(){
+        return 2*Math.PI*radio;
+    }
+    public void Mover(int dx, int dy){
+        x+= dx;
+        y+= dy;
+    }
+    public String Imprimir(){
+        return "Radio: "+radio
+              +"\nCentro "+"x: "+x+" y: "+y;
+    }
+            //ClaseCuadrado
+            public int x;
+    public int y;
+    public double lado;
+    
+    public Cuadrado(double L1){
+        lado = L1;
+        x=0;
+        y=0;
+    }
+    public Cuadrado(double L1, int Vx, int Vy){
+        lado = L1;
+        x=Vx;
+        y=Vy;
+    }
+    public double CalcularArea(){
+        return lado*lado;
+    }
+    public double CalcularPerimetro(){
+        return 4*lado;
+    }
+    public void Mover(int dx, int dy){
+        x+= dx;
+        y+= dy;
+    }
+     public String Imprimir(){
+        return "Lado: "+lado
+              +"\nVértice Inferior Izquierdo "+"x: "+x+" y: "+y;
+    }
+            //ClaseElipse
+             public int x;
+    public int y;
+    public double SemiejeMayor;
+    public double SemiejeMenor;
+    
+    public Elipse(double SMy, double SMn){
+        SemiejeMayor = SMy;
+        SemiejeMenor = SMn;
+        x=0;
+        y=0;
+    }
+    public Elipse(double SMy, double SMn,int Cx, int Cy){
+        SemiejeMayor = SMy;
+        SemiejeMenor = SMn;
+        x=Cx;
+        y=Cy;
+    }
+    public double CalcularArea(){
+        return Math.PI*(SemiejeMayor)*(SemiejeMenor);
+    }
+    public double CalcularPerimetro(){
+        return 2*Math.PI*(Math.sqrt((Math.pow(SemiejeMayor,2)+Math.pow(SemiejeMenor,2))/2));
+    }
+    public void Mover(int dx, int dy){
+        x+= dx;
+        y+= dy;
+    }
+     public String Imprimir(){
+        return "Semieje Mayor: "+SemiejeMayor+"\nSemieje Menor: "+SemiejeMenor
+              +"\nCentro "+"x: "+x+" y: "+y;
+    }
+            //ClaseRecta
+            public int x1,x2;
+    public int y1,y2;
+    
+    public Recta(int Pix, int Piy){
+        x1 = Pix;
+        y1 = Piy;
+        x2 = 0;
+        y2 = 0;
+    }
+    public Recta(int Pix, int Piy, int Pfx, int Pfy){
+        x1 = Pix;
+        y1 = Piy;
+        x2 = Pfx;
+        y2 = Pfy;
+    }
+    public double CalcularLongitud(){
+        return  Math.sqrt(Math.pow(x2-x1,2)+ Math.pow(y2-y1,2));
+    }
+    public void Mover(int dx, int dy){
+        x1+= dx;
+        y1+= dy;
+        x2+= dx;
+        y2+= dy;
+    }
+     public String Imprimir(){
+        return "Punto Inicio x: "+x1+" y: "+y1+"\tPunto Fin x: "+x2+" y: "+y2;
+    }
+            //ClaseRectangulo
+              public int x;
+    public int y;
+    public double lado1;
+    public double lado2;
+   
+    public Rectangulo(double L1, double L2){
+        lado1 = L1;
+        lado2 = L2;
+        x=0;
+        y=0;
+    }
+    public Rectangulo(double L1, double L2,int Vx, int Vy){
+        lado1 = L1;
+        lado2 = L2;
+        x = Vx;
+        y = Vy;
+    }
+    
+    public double CalcularArea(){
+        return lado1*lado2;
+    }
+    public double CalcularPerimetro(){
+        return (2*lado1)+(2*lado2);
+    }
+    public void Mover(int dx, int dy){
+        x+= dx;
+        y+= dy;
+    }
+    public String Imprimir(){
+        return "Lado1: "+lado1+"\tLado2: "+lado2
+              +"\nVértice Inferior Izquierdo "+"x: "+x+" y: "+y;
+    }
+            //ClaseTriangulo
+            public int x1,x2,x3;
+    public int y1,y2,y3;
+    public Triangulo(int x1,int y1,int x2,int y2){
+        this.x1 = x1;
+        this.y1 = y1;
+        this.x2 = x2;
+        this.y2 = y2;
+        x3 = 0;
+        y3 = 0;
+    }
+     public Triangulo(int x1,int y1,int x2,int y2, int x3,int y3){
+        this.x1 = x1;
+        this.y1 = y1;
+        this.x2 = x2;
+        this.y2 = y2;
+        this.x3 = x3;
+        this.y3 = y3;
+    }
+    public double CalcularArea(){
+        return (((x1*y2)+(x2*y3)+(x3*y1))-((x1*y3)+(x3*y2)+(x2*y1)))/2;
+    }
+    public double CalcularPerimetro(){
+        return Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2))+ Math.sqrt(Math.pow(x3-x2,2)
+                +Math.pow(y3-y2,2))+Math.sqrt(Math.pow(x3-x1,2)+Math.pow(y3-y1,2));
+    }
+    public void Mover(int dx, int dy){
+        x1+= dx;
+        y1+= dy;
+        x2+= dx;
+        y2+= dy;
+        x3+= dx;
+        y3+= dy;
+    }
+    public String Imprimir(){
+        return "Vértice1 x: "+x1+" y: "+y1+"\nVértice2 x: "+x2+" y: "+y2
+              +"\nVértice3 x: "+x3+" y: "+y3;
+            
+    }
+            
